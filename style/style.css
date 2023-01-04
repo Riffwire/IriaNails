@@ -1,0 +1,411 @@
+:root {
+  --white: #f7fefc;
+  --shadow-background: rgba(4, 9, 30, 0.7);
+  --laranja: #fe4134;
+  --verde: #173c0f;
+  --cizentoEscuro: rgb(126, 126, 126);
+  --cizentoClaro: rgb(173, 173, 173);
+}
+
+.green {
+  background-color: var(--verde);
+}
+
+.grey {
+  background-color: rgb(173, 173, 173);
+}
+
+.color-green {
+  color: var(--verde);
+}
+
+.color-white {
+  color: var(--white);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: serif;
+}
+
+.top-layer {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("../images/perfil.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid rgba(4, 9, 30, 0.7);
+}
+
+.navbar {
+  min-width: 100%;
+  height: 20vh;
+  justify-content: space-between;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.navbar img {
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  margin-top: 2%;
+  margin-left: 5%;
+  cursor: pointer;
+}
+
+.navbar ul,
+li {
+  letter-spacing: 4px;
+  list-style: none;
+  display: inline-block;
+  padding: 0px 40px 0px 0px;
+  position: relative;
+  color: var(--white);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--white);
+  padding: 10px;
+}
+
+.navbar li ::after {
+  content: "";
+  width: 0%;
+  height: 6px;
+  border-radius: 30px;
+  background-color: var(--laranja);
+  display: block;
+  margin-top: 5px;
+}
+
+.navbar li :hover::after {
+  transform-origin: top;
+  width: 100%;
+  transition: all 1s;
+}
+
+.top-layer-text {
+  text-align: center;
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top-layer-text h1 {
+  color: var(--white);
+  font-family: sans-serif;
+  letter-spacing: 0.515rem;
+}
+
+.top-layer-text p {
+  color: var(--white);
+  font-family: sans-serif;
+  letter-spacing: 0.222rem;
+  margin: 20px 0px 40px;
+}
+
+.top-layer-text :last-child {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--white);
+  border: 1px solid var(--white);
+  padding: 12px 24px;
+  font-size: 13px;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.top-layer-text a:hover {
+  border: 1px solid var(--laranja);
+  color: var(--laranja);
+  transition: all 1.2s;
+  transform: scale(1.1);
+}
+
+.about-layer {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-items: center;
+  justify-content: space-around;
+  align-items: center;
+  align-items: center;
+  background-color: var(--cizentoClaro);
+  overflow: hidden;
+}
+
+.about-layer-photo {
+  border-radius: 10%;
+  width: 20rem;
+  height: 30rem;
+  background-image: url("../images/irianasflores.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.about-section h1 {
+  letter-spacing: 0.23rem;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.about-section p {
+  letter-spacing: 0.349rem;
+  margin: 20px;
+  margin-left: 50px;
+  font-size: 20px;
+}
+
+.services-layer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #173c0f 50%, rgb(173, 173, 173) 50%);
+}
+
+.services-box {
+  width: 90%;
+  height: 80vh;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+}
+
+.service-item {
+  width: 25%;
+  height: 100%;
+  box-shadow: 5px 5px 5px 5px #0000005b;
+  border-radius: 40px;
+  background-color: var(--white);
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  justify-content: space-around;
+  transition: 1.3s all;
+}
+
+.service-item :first-child {
+  margin-top: 20px;
+  color: var();
+}
+
+.service-item h2::after {
+  width: 100%;
+  height: 2px;
+  content: "";
+  display: flex;
+  margin-top: 20px;
+  border-top: 0.1rem solid var(--verde);
+}
+
+.service-item h3 {
+  margin-top: 20%;
+  font-weight: 100;
+}
+
+.service-item:hover {
+  transform: scale(1.1);
+}
+
+.btn-get-markingg {
+  font-size: 17px;
+  width: 150px;
+  height: 55px;
+  cursor: pointer;
+  border-style: none;
+  border-radius: 2px;
+  font-weight: 550;
+  display: inline-block;
+  transition: all 1.2s;
+}
+
+.btn-get-marking {
+  font-size: 17px;
+  width: 150px;
+  height: 55px;
+  cursor: pointer;
+  border-style: none;
+  border-radius: 2px;
+  font-weight: 550;
+  display: inline-block;
+  transition: all 1.2s;
+}
+
+.service-item :last-child {
+  margin-top: 20%;
+}
+
+.btn-get-marking:hover {
+  background-color: var(--verde);
+  color: var(--white);
+}
+
+.btn-get-markingg:hover {
+  background-color: rgb(173, 173, 173);
+  color: var(--verde);
+}
+
+.footer {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(126, 126, 126);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer-logo {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-image: url("../1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.footer i {
+  color: var(--verde);
+  transition: all 0.6s;
+}
+
+.footer i:hover {
+  transform: scale(1.2);
+}
+
+.gallery-layer {
+  width: 100%;
+  height: 100vh;
+  display: inline-block;
+  background-color: var(--cizentoClaro);
+
+}
+
+.gallery-layer-topbar {
+  top: 0;
+  width: 100%;
+  height: 15%;
+  background-color: var(--verde);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.gallery-layer-topbar h1 {
+  color: var(--white);
+}
+
+.gallery-layer img {
+  transform: translate(50%, 50%);
+}
+
+.colum {
+  float: left;
+  width: 100%;
+  height: 43%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--cizentoClaro);
+}
+
+.card {
+  width: 10em;
+  height: 12em;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card :hover {
+  cursor: pointer;
+}
+
+.card-photo {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.1), rgba(4, 9, 30, 0.7)), url("../images/testeunhas.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-btn {
+  width: 7em;
+  height: 7em;
+  background-color: red;
+  display: flex;
+  border-radius: 50%;
+  background-image: url("../VerMais.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+
+}
+
+.card :hover {
+  transition: all 1.2s;
+  transform: scale(1.1);
+}
+
+.popup-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+
+.popup-img span {
+  position: absolute;
+  left: 95%;
+  font-size: 40px;
+  font-weight: bolder;
+  color: var(--white);
+  cursor: pointer;
+  z-index: 100;
+}
+
+.popup-img img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 5px;
+  width: 500px;
+  object-fit: cover;
+}
+
+@media (max-width:768px) {
+  .popup-img img {
+    width: 95%;
+  }
+}
