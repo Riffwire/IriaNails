@@ -50,7 +50,7 @@
   display: flex;
   text-align: center;
   align-items: center;
-  
+
 }
 
 .navbar img {
@@ -94,6 +94,18 @@ li {
   transition: all 1s;
 }
 
+.navbar i {
+  right: 1em;
+  position: absolute;
+  color: var(--white);
+  transition: all 2s;
+  display: none;
+}
+
+.navbar i:hover {
+  transform: scale(1.2);
+}
+
 .top-layer-text {
   text-align: center;
   width: 90%;
@@ -122,7 +134,7 @@ li {
   color: var(--white);
   border: 1px solid var(--white);
   padding: 12px 24px;
-  font-size: 13px;
+  font-size: 17px;
   background-color: transparent;
   position: relative;
   cursor: pointer;
@@ -207,7 +219,6 @@ li {
 
 .service-item :first-child {
   margin-top: 20px;
-  color: var();
 }
 
 .service-item h2::after {
@@ -220,7 +231,7 @@ li {
 }
 
 .service-item h3 {
-  margin-top: 20%;
+  margin-top: 15%;
   font-weight: 100;
 }
 
@@ -335,7 +346,7 @@ li {
 }
 
 .card {
-  width: 10em;
+  width: 13em;
   height: 13em;
   border-radius: 1rem;
   overflow: hidden;
@@ -361,10 +372,11 @@ li {
   cursor: pointer;
 
 }
-.card img{
+
+.card img {
   width: 100%;
   height: 100%;
-  transform: translate(0%,0%);
+  transform: translate(0%, 0%);
 }
 
 .card :hover {
@@ -407,4 +419,39 @@ li {
   .popup-img img {
     width: 95%;
   }
+
+  .navbar a {
+    display: none;
+  }
+
+  .navbar i {
+    display: block;
+  }
+
+  .about-section h1 {
+    letter-spacing: 0.2rem;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  .about-section p {
+    margin-bottom: 20px;
+    margin-left: 40px;
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .about-layer-photo {
+    width: 20em;
+    height: 20em;
+    margin: 2em;
+  }
+
+  .colum .card {
+    width: 10em;
+    height: 10em;
+  }
+
 }

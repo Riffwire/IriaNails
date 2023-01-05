@@ -17,12 +17,12 @@
       <!-- NAVBAR -->
       <div class="navbar navbar-srolled">
         <img src="images/1.png" alt="" onclick="refreshpage()" />
+        <i class="fa-solid fa-bars fa-2x"></i>
         <ul>
           <li><a href="#home">Inicio</a></li>
           <li><a href="#about">Sobre</a></li>
           <li><a href="#gallery">Trabalho</a></li>
           <li><a href="#services">Serviços</a></li>
-          <!-- <li><a href="">Login/Registar</a></li> -->
         </ul>
       </div>
       <div class="top-layer-text">
@@ -67,7 +67,7 @@
     <!-- POP UP IMG -->
     <div class="popup-img">
       <span>&times;</span>
-      <img src="VerMais.png" alt="">
+      <img src="images/1.png" alt="">
     </div>
       <!-- SERVICES LAYER -->
     <div class="services-layer" id="services">
@@ -78,15 +78,15 @@
           <h3>Unhas de gel (Manutenção)<strong> - 17€</strong></h3>
           <h3>Unhas de verniz gel <strong> - 12€</strong></h3>
           <h3>Apenas pintura verniz <strong> - 6€</strong></h3>
-          <button class="btn-get-markingg green color-white">Marcar agora</button>
+          <button class="btn-get-markingg green color-white" onclick="location='#social'">Marcar agora</button>
         </div>
         <div class="service-item">
           <h2>Pedicure</h2>
           <h3>Completa verniz gel<strong> - 15€</strong></h3>
           <h3>Completa verniz <strong> - 12€</strong></h3>
           <h3>Apenas pintura verniz<strong> - 6€</strong></h3>
-
-          <button class="btn-get-marking grey color-green">Marcar agora</button>
+          
+          <button class="btn-get-marking grey color-green" onclick="location='#social'">Marcar agora</button>
 
         </div>
         <div class="service-item">
@@ -95,8 +95,7 @@
           <h3>Braços <strong> - 6€</strong></h3>
           <h3>Apenas sobrancelhas <strong> - 3,50€</strong></h3>
           <h3>Apenas buço <strong> - 2,50€</strong></h3>
-          <button class="btn-get-markingg green color-white">Marcar agora</button>
-
+          <button class="btn-get-markingg green color-white" onclick="location='#social'">Marcar agora</button>
         </div>
       </div>
     </div>
@@ -116,3 +115,17 @@
   
 </script>
 <script src="https://kit.fontawesome.com/daedf54519.js" crossorigin="anonymous"></script>
+<script>
+  document.querySelectorAll('.card img').forEach(image =>{
+    image.onclick=()=>{
+
+    document.querySelector('.popup-img').style.display = 'block';
+    document.querySelector('.popup-img img').src=image.getAttribute('src');
+    }
+  });
+</script>
+<script>
+   document.querySelector('.popup-img span').onclick=()=>{
+    document.querySelector('.popup-img').style.display = 'none';
+  }
+</script>
