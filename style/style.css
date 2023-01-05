@@ -282,7 +282,7 @@ li {
   border-radius: 50%;
   width: 80px;
   height: 80px;
-  background-image: url("../1.png");
+  background-image: url("../images/1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -354,7 +354,7 @@ li {
   background-color: red;
   display: flex;
   border-radius: 50%;
-  background-image: url("../VerMais.png");
+  background-image: url("../images/VerMais.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
