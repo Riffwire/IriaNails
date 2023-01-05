@@ -335,8 +335,8 @@ li {
 }
 
 .card {
-  width: 12em;
-  height: 15em;
+  width: 10em;
+  height: 13em;
   border-radius: 1rem;
   overflow: hidden;
   display: flex;
