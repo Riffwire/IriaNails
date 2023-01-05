@@ -51,7 +51,9 @@
   text-align: center;
   align-items: center;
 }
-
+/* .navbar-srolled{
+  background-color:black;
+} */
 .navbar img {
   border-radius: 50%;
   width: 5rem;
@@ -125,6 +127,7 @@ li {
   background-color: transparent;
   position: relative;
   cursor: pointer;
+  margin-top: 10em;
 }
 
 .top-layer-text a:hover {
@@ -381,7 +384,7 @@ li {
   background-color: rgba(0, 0, 0, .9);
   height: 100%;
   width: 100%;
-  z-index: 100;
+  z-index: 3;
   display: none;
 }
 
@@ -392,7 +395,7 @@ li {
   font-weight: bolder;
   color: var(--white);
   cursor: pointer;
-  z-index: 100;
+  z-index: 3;
 }
 
 .popup-img img {
