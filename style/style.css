@@ -95,15 +95,10 @@ li {
 }
 
 .navbar i {
-  right: 1em;
   position: absolute;
   color: var(--white);
   transition: all 2s;
   display: none;
-}
-
-.navbar i:hover {
-  transform: scale(1.2);
 }
 
 .top-layer-text {
@@ -431,11 +426,21 @@ li {
   .navbar a {
     display: none;
   }
-
+  .menu-icon{
+    right: 3em;
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
   .navbar i {
     display: block;
   }
-
   .about-section h1 {
     letter-spacing: 0.2rem;
     margin-bottom: 20px;
@@ -461,6 +466,31 @@ li {
     width: 10em;
     height: 10em;
   }
-
+  .services-layer{
+    display:flex;
+    height: 200vh;
+  }
+  .service-item{
+    margin: 1em;
+    width: 50%;
+    height: 60vh;
+  }
+ 
+  .btn-get-markingg {
+    width: 8em;
+    height: 2em;
+  }
+  .btn-get-marking {
+    width: 8em;
+    height: 2em;
+  }
+  .service-item-top h2{
+    font-weight: 100;
+    margin-top: 1em;
+  }
+  .navbar ul,
+li{
+  display: none;
 }
-/* teste preços card */
+}
+
