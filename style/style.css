@@ -316,7 +316,6 @@ li {
   height: 100vh;
   display: inline-block;
   background-color: var(--cizentoClaro);
-
 }
 
 .gallery-layer-topbar {
@@ -494,7 +493,6 @@ li{
 }
 .popup-img span {
   left: 90%;
-  
 }
 }
 
