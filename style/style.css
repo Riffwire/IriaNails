@@ -492,5 +492,9 @@ li {
 li{
   display: none;
 }
+.popup-img span {
+  left: 90%;
+  
+}
 }
 
