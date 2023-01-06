@@ -191,34 +191,46 @@ li {
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: linear-gradient(to bottom, #173c0f 50%, rgb(173, 173, 173) 50%);
 }
-
-.services-box {
-  width: 90%;
-  height: 80vh;
-  background-color: transparent;
-  display: flex;
-  justify-content: space-around;
-}
-
 .service-item {
   width: 25%;
-  height: 100%;
+  height: 80%;
   box-shadow: 5px 5px 5px 5px #0000005b;
   border-radius: 40px;
   background-color: var(--white);
   display: block;
   text-align: center;
   overflow: hidden;
-  justify-content: space-around;
   transition: 1.3s all;
 }
 
-.service-item :first-child {
-  margin-top: 20px;
+.service-item-top{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.service-item-center{
+  width: 100%;
+  height: 75%;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+}
+.service-item-bottom{
+  width: 100%;
+  height: 15%;
+  align-items:flex-start;
+  display: flex;
+  justify-content: center;
 }
 
 .service-item h2::after {
@@ -231,7 +243,6 @@ li {
 }
 
 .service-item h3 {
-  margin-top: 15%;
   font-weight: 100;
 }
 
@@ -263,9 +274,6 @@ li {
   transition: all 1.2s;
 }
 
-.service-item :last-child {
-  margin-top: 20%;
-}
 
 .btn-get-marking:hover {
   background-color: var(--verde);
@@ -455,3 +463,4 @@ li {
   }
 
 }
+/* teste preços card */
