@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/style.css" />
+    <script src="scripts/javascript.js"></script>
+    <script src="https://kit.fontawesome.com/daedf54519.js" crossorigin="anonymous"></script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@200;300;400&display=swap");
     </style>
@@ -13,6 +15,22 @@
   </head>
   <!-- FRONTEND -->
   <body>
+    <!-- <div class="menu">
+      <div class="menu-top"><span>&times;</span></div>
+      <div class="menu-main">
+
+        <a href="">a</a>
+        <a href="">b</a>
+        <a href="">c</a>
+      </div>
+
+    </div> -->
+    <div class="menu">
+      <span>&times;</span>
+     <div class="menu-btn"><h5>Sobre</h5></div>
+     <div class="menu-btn"><h5>Trabalhos</h5></div>
+     <div class="menu-btn"><h5>Serviços</h5></div>
+    </div>
     <div class="top-layer" id="home">
       <!-- NAVBAR -->
       <div class="navbar navbar-srolled">
@@ -127,25 +145,3 @@
     </div>
   </body>
 </html>
-<!-- SCRIPTS -->
-<script>
-  function refreshpage() {
-    location.reload();
-  }
-  
-</script>
-<script src="https://kit.fontawesome.com/daedf54519.js" crossorigin="anonymous"></script>
-<script>
-  document.querySelectorAll('.card img').forEach(image =>{
-    image.onclick=()=>{
-
-    document.querySelector('.popup-img').style.display = 'block';
-    document.querySelector('.popup-img img').src=image.getAttribute('src');
-    }
-  });
-</script>
-<script>
-   document.querySelector('.popup-img span').onclick=()=>{
-    document.querySelector('.popup-img').style.display = 'none';
-  }
-</script>
