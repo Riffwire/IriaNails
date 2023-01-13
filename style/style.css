@@ -33,13 +33,13 @@
 
 .menu span {
   position: absolute;
-  right: 1em;
   top: 1em;
   font-size: 2em;
   font-weight: bolder;
   color: var(--white);
   cursor: pointer;
   z-index: 4;
+  display: block;
 }
 
 .menu {
@@ -49,15 +49,16 @@
   min-height: 100vh;
   position: fixed;
   background-color: rgba(4, 9, 30, 0.7);
-  transform: translate(0, 0);
   display: none;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-}
 
+}
+.menu > .menu-btn:first-child{
+  margin-top: 5em;
+}
 .menu-btn {
-  margin: 1em;
+  margin-top: 2em;
   z-index: 4;
   width: 90%;
   height: 2em;
@@ -70,9 +71,13 @@
   border-style: double;
   cursor: pointer;
 }
-
-.menu-btn:hover h5 {
+.menu-btn a{
+  text-decoration: none;
+  color: var(--white);
+}
+.menu-btn:hover a {
   color: #f7fefc99;
+  border-color: #f7fefc99;
 }
 
 .top-layer {

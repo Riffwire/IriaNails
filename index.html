@@ -15,28 +15,20 @@
   </head>
   <!-- FRONTEND -->
   <body>
-    <!-- <div class="menu">
-      <div class="menu-top"><span>&times;</span></div>
-      <div class="menu-main">
 
-        <a href="">a</a>
-        <a href="">b</a>
-        <a href="">c</a>
-      </div>
-
-    </div> -->
     <div class="menu">
-      <span>&times;</span>
-     <div class="menu-btn"><h5>Sobre</h5></div>
-     <div class="menu-btn"><h5>Trabalhos</h5></div>
-     <div class="menu-btn"><h5>Serviços</h5></div>
+     <div class="menu-btn"><a href="#about">Sobre</a></div>
+     <div class="menu-btn"><a href="#gallery">Trabalhos</a></div>
+     <div class="menu-btn"><a href="#services">Serviços</a></div>
+     <span onclick="hideMenu()">&times;</span>
+
     </div>
     <div class="top-layer" id="home">
       <!-- NAVBAR -->
       <div class="navbar navbar-srolled">
         <img src="images/1.png" alt="" onclick="refreshpage()" />
         <div class="menu-icon">
-          <i class="fa-solid fa-caret-down fa-2xl"></i>
+          <i class="fa-solid fa-caret-down fa-2xl" onclick="displayMenu()"></i>
         </div>        
         <ul>
           <li><a href="#home">Inicio</a></li>
@@ -143,5 +135,17 @@
       <div class="footer-logo"></div>
       <a href="https://instagram.com/iria2748?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram fa-2x" id="insta-icon"></i></a>
     </div>
+    <script>
+      document.querySelectorAll('.card img').forEach(image => {
+  image.onclick = () => {
+
+    document.querySelector('.popup-img').style.display = 'block';
+    document.querySelector('.popup-img img').src = image.getAttribute('src');
+  }
+});
+document.querySelector('.popup-img span').onclick = () => {
+  document.querySelector('.popup-img').style.display = 'none';
+}
+    </script>
   </body>
 </html>

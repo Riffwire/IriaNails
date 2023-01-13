@@ -1,16 +1,17 @@
 
-  function refreshpage() {
-    location.reload();
+function refreshpage() {
+  location.reload();
+}
+
+
+function displayMenu() {
+  document.querySelector('.menu').style.display = 'flex';
+  document.querySelector('.menu-icon i').style.display = 'none';
+}
+function hideMenu() {
+  document.querySelector('.menu').style.display = 'none';
+  var x = window.matchMedia("(max-width: 700px)")
+  if (x.matches) {
+    document.querySelector('.menu-icon i').style.display = 'block';
   }
-
-  document.querySelectorAll('.card img').forEach(image =>{
-    image.onclick=()=>{
-
-    document.querySelector('.popup-img').style.display = 'block';
-    document.querySelector('.popup-img img').src=image.getAttribute('src');
-    }
-  });
-
-   document.querySelector('.popup-img span').onclick=()=>{
-    document.querySelector('.popup-img').style.display = 'none';
-  }
+}
