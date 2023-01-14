@@ -10,7 +10,7 @@ function displayMenu() {
 }
 function hideMenu() {
   document.querySelector('.menu').style.display = 'none';
-  var x = window.matchMedia("(max-width: 700px)")
+  var x = window.matchMedia("(max-width: 900px)")
   if (x.matches) {
     document.querySelector('.menu-icon i').style.display = 'block';
   }

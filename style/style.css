@@ -54,9 +54,11 @@
   align-items: center;
 
 }
-.menu > .menu-btn:first-child{
+
+.menu>.menu-btn:first-child {
   margin-top: 5em;
 }
+
 .menu-btn {
   margin-top: 2em;
   z-index: 4;
@@ -71,10 +73,12 @@
   border-style: double;
   cursor: pointer;
 }
-.menu-btn a{
+
+.menu-btn a {
   text-decoration: none;
   color: var(--white);
 }
+
 .menu-btn:hover a {
   color: #f7fefc99;
 }
