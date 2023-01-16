@@ -295,7 +295,7 @@ li {
 }
 
 .service-item h3 {
-  font-weight: 100;
+  font-weight:100;
 }
 
 .service-item:hover {
@@ -649,5 +649,9 @@ li {
   .load-more-layer .card {
     margin-top: 1em;
     margin-bottom: 1em;
+  }
+
+  .service-item-center h3{
+    font-size: 15px;
   }
 }
