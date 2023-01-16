@@ -414,7 +414,8 @@ li {
   gap: 2em;
   z-index: 5;
 }
-.load-more-layer .card{
+
+.load-more-layer .card {
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -446,6 +447,7 @@ li {
   cursor: pointer;
 
 }
+
 .card-btn-goBack {
   width: 7em;
   height: 7em;
@@ -639,10 +641,12 @@ li {
     margin-left: 40px;
     font-size: 30px;
   }
+
   .load-more-layer {
     grid-template-columns: repeat(2, 1fr);
   }
-  .load-more-layer .card{
+
+  .load-more-layer .card {
     margin-top: 1em;
     margin-bottom: 1em;
   }
