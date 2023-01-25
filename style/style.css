@@ -49,22 +49,21 @@
   right: 0;
   min-height: 100vh;
   position: fixed;
-  background-color: rgba(4, 9, 30, 0.7);
+  background-color:rgb(4 9 30 / 90%);
   display: none;
   flex-direction: column;
   align-items: center;
-
 }
 
-.menu>.menu-btn:first-child {
-  margin-top: 5em;
+.menu>.menu-btn:nth-child(1) {
+  margin-top: 10em;
 }
 
 .menu-btn {
   margin-top: 2em;
   z-index: 4;
   width: 90%;
-  height: 2em;
+  height: 3em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,6 +72,7 @@
   border-radius: 1em;
   border-style: double;
   cursor: pointer;
+  letter-spacing:2px;
 }
 
 .menu-btn a {
@@ -93,7 +93,8 @@
   min-height: 100vh;
   width: 100%;
   position: relative;
-  border-bottom: 1px solid rgba(4, 9, 30, 0.7);
+  border-bottom:1px solid rgba(4, 9, 30, 0.7);
+  box-shadow: red 5px;
 }
 
 .navbar {
@@ -108,8 +109,8 @@
 
 .navbar img {
   border-radius: 50%;
-  width: 5rem;
-  height: 5rem;
+  width: 7rem;
+  height: 7rem;
   margin-top: 2%;
   margin-left: 5%;
   cursor: pointer;
