@@ -1,170 +1,177 @@
+<!--  teste-->
 <html lang="en">
-  <head>
+
+<head>
     <!-- META | TITULO -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/style.css" />
-     <link rel="icon" type="image/x-icon" href="images/website-icon.ico">
+    <link rel="icon" type="image/x-icon" href="images/website-icon.ico">
 </head>
-    <script src="scripts/javascript.js"></script>
-    <script src="https://kit.fontawesome.com/daedf54519.js" crossorigin="anonymous"></script>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@200;300;400&display=swap");
-    </style>
-    <title>Iria Nails</title>
-  </head>
-  <!-- FRONTEND -->
-  <body>
+<script src="scripts/javascript.js"></script>
+<script src="https://kit.fontawesome.com/daedf54519.js" crossorigin="anonymous"></script>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@200;300;400&display=swap");
+</style>
+<title>Iria Nails</title>
+</head>
+<!-- FRONTEND -->
+
+<body>
 
     <div class="menu">
-     <div class="menu-btn"><a href="#about">Sobre</a></div>
-     <div class="menu-btn"><a href="#gallery">Trabalhos</a></div>
-     <div class="menu-btn"><a href="#services">Serviços</a></div>
-     <span onclick="hideMenu()">&times;</span>
+        <div class="menu-btn"><a href="#about">Sobre</a></div>
+        <div class="menu-btn"><a href="#gallery">Trabalhos</a></div>
+        <div class="menu-btn"><a href="#services">Serviços</a></div>
+        <span onclick="hideMenu()">&times;</span>
 
     </div>
     <div class="top-layer" id="home">
-      <!-- NAVBAR -->
-      <div class="navbar navbar-srolled">
-        <img src="images/1.png" alt="" onclick="refreshpage()" />
-        <div class="menu-icon">
-          <i class="fa-solid fa-caret-down fa-2xl" onclick="displayMenu()"></i>
-        </div>        
-        <ul>
-          <li><a href="#home">Inicio</a></li>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#gallery">Trabalho</a></li>
-          <li><a href="#services">Serviços</a></li>
-        </ul>
-      </div>
-      <div class="top-layer-text">
-        <h1>Iria Nails' website</h1>
-        <p>
-          Nail Art (desenhos, brilhantes, gliter, efeito espelho, degradê, folha de ouro, etc...), ou até 3 unhas danificadas. Incluído no preçário
-        </p>
-       
-        <a href="#social">Contacte me</a>
-      </div>
+        <!-- NAVBAR -->
+        <div class="navbar navbar-srolled">
+            <img src="images/1.png" alt="" onclick="refreshpage()" />
+            <div class="menu-icon">
+                <i class="fa-solid fa-caret-down fa-2xl" onclick="displayMenu()"></i>
+            </div>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#gallery">Trabalho</a></li>
+                <li><a href="#services">Serviços</a></li>
+            </ul>
+        </div>
+        <div class="top-layer-text">
+            <h1>Iria Nails' website</h1>
+            <p>
+                Nail Art (desenhos, brilhantes, gliter, efeito espelho, degradê, folha de ouro, etc...), ou até 3 unhas danificadas. Incluído no preçário
+            </p>
+
+            <a href="#social">Contacte me</a>
+        </div>
     </div>
     <!-- ABOUT-LAYER -->
     <div class="about-layer" id="about">
-      <section class="about-section">
-        <h1>Olá!! Sou a Iria Almeida.</h1>
-        <p>Sou esteticista desde 2010.</p>
-        <p>Tirei a formação com a paggy sage, foi uma formação base</p>
-        <p>mais focada na contrução, não incluia nail art, teve a duração</p>
-        <p>de 4 dias.Todos os desenhos e tecnicas foram desenvolvidos</p>
-        <p>por mim com muito treino e aperfeiçoamento.</p>
-      </section>
-      <div class="about-layer-photo"></div>
+        <section class="about-section">
+            <h1>Olá!! Sou a Iria Almeida.</h1>
+            <p>Sou esteticista desde 2010.</p>
+            <p>Tirei a formação com a paggy sage, foi uma formação base</p>
+            <p>mais focada na contrução, não incluia nail art, teve a duração</p>
+            <p>de 4 dias.Todos os desenhos e tecnicas foram desenvolvidos</p>
+            <p>por mim com muito treino e aperfeiçoamento.</p>
+        </section>
+        <div class="about-layer-photo"></div>
     </div>
     <!-- GALLERY LAYER -->
     <div class="gallery-layer" id="gallery">
         <div class="gallery-layer-topbar">
-          <h1>Meu trabalho</h1>
+            <h1>Meu trabalho</h1>
         </div>
         <div class="gallery-content">
-          
-          <div class="card"><img src="images/nails_1.jpeg" alt=""></div>
-          <div class="card"><img src="images/nails_2.jpeg" alt=""></div>
-          <div class="card"><img src="images/nails_3.jpeg" alt=""></div>
-          <div class="card"><img src="images/nails_4.jpeg" alt=""></div>
-          <div class="card"><img src="images/nails_5.jpeg" alt=""></div>
-          <div class="card" ><div class="card-btn"onclick="displayLoadMore()"></div></div>
+
+            <div class="card"><img src="images/nails_1.jpeg" alt=""></div>
+            <div class="card"><img src="images/nails_2.jpeg" alt=""></div>
+            <div class="card"><img src="images/nails_3.jpeg" alt=""></div>
+            <div class="card"><img src="images/nails_4.jpeg" alt=""></div>
+            <div class="card"><img src="images/nails_5.jpeg" alt=""></div>
+            <div class="card">
+                <div class="card-btn" onclick="displayLoadMore()"></div>
+            </div>
         </div>
-        </div>
+    </div>
     </div>
     <!--  LOAD MORE LAYER  -->
     <div class="load-more-layer">
 
-      <div class="card"><div class="card-btn-goBack" onclick="HideLoadMore()"></div></div>
-      <div class="card"><img src="images/nails_2.jpeg" alt=""></div>
-      <div class="card"><img src="images/nails_3.jpeg" alt=""></div>
-      <div class="card"><img src="images/nails_4.jpeg" alt=""></div>
-      <div class="card"><img src="images/nails_5.jpeg" alt=""></div>
-      <div class="card"><img src="images/nails_1.jpeg" alt=""></div>
-      <div class="card"><img src="images/nails_2.jpeg" alt=""></div>
-      <div class="card"><img src="images/nails_3.jpeg" alt=""></div>
-      <div class="card"><img src="images/nails_4.jpeg" alt=""></div>
-      <div class="card"><img src="images/nails_5.jpeg" alt=""></div>
-      <div class="card"><img src="images/nails_1.jpeg" alt=""></div>
-      <div class="card"><img src="images/nails_2.jpeg" alt=""></div>
-      <div class="card"><img src="images/nails_3.jpeg" alt=""></div>
-      <div class="card"><img src="images/nails_4.jpeg" alt=""></div>
-      <div class="card"><img src="images/nails_5.jpeg" alt=""></div>
+        <div class="card">
+            <div class="card-btn-goBack" onclick="HideLoadMore()"></div>
+        </div>
+        <div class="card"><img src="images/nails_2.jpeg" alt=""></div>
+        <div class="card"><img src="images/nails_3.jpeg" alt=""></div>
+        <div class="card"><img src="images/nails_4.jpeg" alt=""></div>
+        <div class="card"><img src="images/nails_5.jpeg" alt=""></div>
+        <div class="card"><img src="images/nails_1.jpeg" alt=""></div>
+        <div class="card"><img src="images/nails_2.jpeg" alt=""></div>
+        <div class="card"><img src="images/nails_3.jpeg" alt=""></div>
+        <div class="card"><img src="images/nails_4.jpeg" alt=""></div>
+        <div class="card"><img src="images/nails_5.jpeg" alt=""></div>
+        <div class="card"><img src="images/nails_1.jpeg" alt=""></div>
+        <div class="card"><img src="images/nails_2.jpeg" alt=""></div>
+        <div class="card"><img src="images/nails_3.jpeg" alt=""></div>
+        <div class="card"><img src="images/nails_4.jpeg" alt=""></div>
+        <div class="card"><img src="images/nails_5.jpeg" alt=""></div>
     </div>
     <!-- POP UP IMG -->
     <div class="popup-img">
-      <span>&times;</span>
-      <img src="images/1.png" alt="">
+        <span>&times;</span>
+        <img src="images/1.png" alt="">
     </div>
-      <!-- SERVICES LAYER -->
+    <!-- SERVICES LAYER -->
     <div class="services-layer" id="services">
-      <!-- <div class="services-box"> -->
+        <!-- <div class="services-box"> -->
         <div class="service-item">
-          <div class="service-item-top">
-              <h2>Manicure</h3>
-          </div>
-        <div class="service-item-center">
-          
-          <h3>Unhas de gel (Extenção)<strong> - 22€</strong></h3>
-          <h3>Unhas de gel (Manutenção)<strong> - 17€</strong></h3>
-          <h3>Unhas de verniz gel <strong> - 12€</strong></h3>
-          <h3>Apenas pintura verniz <strong> - 6€</strong></h3>
-        </div>
-         <div class="service-item-bottom"> 
-          <button class="btn-get-markingg green color-white" onclick="location='#social'">Marcar agora</button>
-        </div>
+            <div class="service-item-top">
+                <h2>Manicure</h3>
+            </div>
+            <div class="service-item-center">
+
+                <h3>Unhas de gel (Extenção)<strong> - 22€</strong></h3>
+                <h3>Unhas de gel (Manutenção)<strong> - 17€</strong></h3>
+                <h3>Unhas de verniz gel <strong> - 12€</strong></h3>
+                <h3>Apenas pintura verniz <strong> - 6€</strong></h3>
+            </div>
+            <div class="service-item-bottom">
+                <button class="btn-get-markingg green color-white" onclick="location='#social'">Marcar agora</button>
+            </div>
         </div>
         <div class="service-item">
-          <div class="service-item-top">
-            <h2>Pedicure</h2>
-          </div>
-          <div class="service-item-center">
-          <h3>Completa verniz gel<strong> - 15€</strong></h3>
-          <h3>Completa verniz <strong> - 12€</strong></h3>
-          <h3>Apenas pintura verniz<strong> - 6€</strong></h3>
-        </div>
-          
-          <div class="service-item-bottom">
-            <button class="btn-get-marking grey color-green" onclick="location='#social'">Marcar agora</button>
-          </div>
+            <div class="service-item-top">
+                <h2>Pedicure</h2>
+            </div>
+            <div class="service-item-center">
+                <h3>Completa verniz gel<strong> - 15€</strong></h3>
+                <h3>Completa verniz <strong> - 12€</strong></h3>
+                <h3>Apenas pintura verniz<strong> - 6€</strong></h3>
+            </div>
+
+            <div class="service-item-bottom">
+                <button class="btn-get-marking grey color-green" onclick="location='#social'">Marcar agora</button>
+            </div>
 
         </div>
         <div class="service-item">
-          <div class="service-item-top">
-            <h2>Depilação</h2>
-          </div>
-        <div class="service-item-center">
-          <h3>Buço e sobrancelhas <strong> - 6€</strong></h3>
-          <h3>Braços <strong> - 6€</strong></h3>
-          <h3>Apenas sobrancelhas <strong> - 3,50€</strong></h3>
-          <h3>Apenas buço <strong> - 2,50€</strong></h3>
+            <div class="service-item-top">
+                <h2>Depilação</h2>
+            </div>
+            <div class="service-item-center">
+                <h3>Buço e sobrancelhas <strong> - 6€</strong></h3>
+                <h3>Braços <strong> - 6€</strong></h3>
+                <h3>Apenas sobrancelhas <strong> - 3,50€</strong></h3>
+                <h3>Apenas buço <strong> - 2,50€</strong></h3>
+            </div>
+            <div class="service-item-bottom"><button class="btn-get-markingg green color-white" onclick="location='#social'">Marcar agora</button>
+            </div>
         </div>
-        <div class="service-item-bottom"><button class="btn-get-markingg green color-white" onclick="location='#social'">Marcar agora</button>
-        </div>  
-        </div>
-      <!-- </div> -->
+        <!-- </div> -->
     </div>
     <!-- FOOTER LAYER -->
     <div class="footer" id="social">
-      <a href="https://www.facebook.com/profile.php?id=100033486615493"><i class="fa-brands fa-facebook fa-2x" id="face-icon"></i></a>
-      <div class="footer-logo"></div>
-      <a href="https://instagram.com/iria2748?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram fa-2x" id="insta-icon"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100033486615493"><i class="fa-brands fa-facebook fa-2x" id="face-icon"></i></a>
+        <div class="footer-logo"></div>
+        <a href="https://instagram.com/iria2748?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram fa-2x" id="insta-icon"></i></a>
     </div>
     <script>
-      document.querySelectorAll('.card img').forEach(image => {
-  image.onclick = () => {
+        document.querySelectorAll('.card img').forEach(image => {
+            image.onclick = () => {
 
-    document.querySelector('.popup-img').style.display = 'block';
-    document.querySelector('.popup-img img').src = image.getAttribute('src');
-  }
-});
-document.querySelector('.popup-img span').onclick = () => {
-  document.querySelector('.popup-img').style.display = 'none';
-}
-
+                document.querySelector('.popup-img').style.display = 'block';
+                document.querySelector('.popup-img img').src = image.getAttribute('src');
+            }
+        });
+        document.querySelector('.popup-img span').onclick = () => {
+            document.querySelector('.popup-img').style.display = 'none';
+        }
     </script>
-  </body>
+</body>
+
 </html>
