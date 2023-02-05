@@ -78,6 +78,7 @@
 .menu-btn a {
     text-decoration: none;
     color: var(--white);
+    font-size: 0.84em;
 }
 
 .menu-btn:hover a {
@@ -255,34 +256,6 @@ li {
 .about-section h1 {
     letter-spacing: 3px;
 }
-
-
-/*
-.about-layer-photo {
-  border-radius: 10%;
-  width: 20rem;
-  height: 30rem;
-  background-image: url("../images/irianasflores.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-}
-
-.about-section h1 {
-  letter-spacing: 0.23rem;
-  margin-bottom: 20px;
-  margin-left: 40px;
-  font-size: 30px;
-  font-weight: 600;
-}
-
-.about-section p {
-  letter-spacing: 0.349rem;
-  margin: 20px;
-  margin-left: 50px;
-  font-size: 20px;
-} */
 
 .services-layer {
     width: 100%;
@@ -635,33 +608,6 @@ li {
     .popup-img span {
         left: 90%;
     }
-    /* .about-layer {
-        min-height: 120vh;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        justify-items: center;
-    }
-    .about-layer-photo {
-        width: 12em;
-        height: 17em;
-    }
-    .about-section h1 {
-        letter-spacing: 0.23rem;
-        margin-bottom: 40px;
-        margin-left: 40px;
-        font-size: 30px;
-    } .about-section p {
-        margin-bottom: 20px;
-        margin-left: 40px;
-        font-size: 15px;
-        font-weight: 400;
-    }
-    .about-layer-photo {
-        width: 20em;
-        height: 20em;
-        margin: 2em;
-    }*/
     .load-more-layer {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -672,12 +618,6 @@ li {
     .service-item-center h3 {
         font-size: 15px;
     }
-    /* .about-section h1 {
-        font-size: 20px;
-    }
-    .about-section p {
-        font-size: 10px;
-    } */
     .about-section img {
         height: 50%;
     }
