@@ -51,7 +51,7 @@
         </div>
     </div>
     <!-- ABOUT-LAYER -->
-    <div class="about-layer" id="about">
+    <!-- <div class="about-layer" id="about">
         <section class="about-section">
             <h1>Olá!! Sou a Iria Almeida.</h1>
             <p>Sou esteticista desde 2010.</p>
@@ -61,6 +61,18 @@
             <p>por mim com muito treino e aperfeiçoamento.</p>
         </section>
         <div class="about-layer-photo"></div>
+    </div> -->
+    <div class="about-layer">
+        <div class="about-layer-topbar">
+            <h1>Quem sou?</h1>
+        </div>
+        <div class="about-content">
+            <section class="about-section">
+                <h1>Olá!! Sou a Iria Almeida</h1>
+                <p>Sou esteticista desde 2010. Tirei a formação com a paggy sage, foi uma formação base mais focada na contrução, não incluia nail art, teve a duração de 4 dias.Todos os desenhos e tecnicas foram desenvolvidos por mim com muito treino e aperfeiçoamento.</p>
+            </section>
+            <section class="about-section"><img src="images/irianasflores.jpeg" alt=""></section>
+        </div>
     </div>
     <!-- GALLERY LAYER -->
     <div class="gallery-layer" id="gallery">
@@ -163,9 +175,9 @@
     <script>
         document.querySelectorAll('.card img').forEach(image => {
             image.onclick = () => {
-
-                document.querySelector('.popup-img').style.display = 'block';
                 document.querySelector('.popup-img img').src = image.getAttribute('src');
+                document.querySelector('.popup-img').style.display = 'block';
+
             }
         });
         document.querySelector('.popup-img span').onclick = () => {
